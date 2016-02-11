@@ -1,0 +1,35 @@
+
+
+<div id="content"></div>	
+
+<script type="text/jsx">
+
+	var Proper = React.createClass({
+		getDefaultProps: function() {
+			return {
+				txt: 'Ini adalah default text yaaa!',
+				cat: 10
+			}
+		},
+		propTypes: {
+			txt: React.PropTypes.string,
+			cat: React.PropTypes.number.isRequired
+		},
+		render: function() {
+			var txt = this.props.txt
+			var cat = this.props.cat
+			return(
+				<div>
+					<h2>React Properties</h2>
+					<p>{this.props.txt}</p>
+					<p>{txt}</p>
+					<p>{cat}</p>
+				</div>
+			)
+		}		
+	});
+
+	// React.render(< Proper cat={5} txt="Ini adalah props text" />, document.getElementById('content'));
+	React.render(< Proper />, document.getElementById('content')); 
+
+</script>

@@ -1,0 +1,19 @@
+<h1>Chapter Two - Render Method</h1>
+
+<div id="container"></div>
+
+<script type="text/jsx">
+
+	var App = React.createClass({
+		render: function() {
+			return(
+				<div>
+					<b>Bold</b>
+					<h2>Hello Dyo!</h2>
+				</div>	
+			)
+		}
+	});
+	React.render(<App />, document.getElementById('container'));
+	
+</script>

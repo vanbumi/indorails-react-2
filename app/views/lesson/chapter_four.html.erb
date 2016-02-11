@@ -1,0 +1,26 @@
+<div id="content"></div>
+
+<script type="text/jsx">
+
+	var Statex = React.createClass({
+		getInitialState: function() {
+			return{
+				txt: 'This the state'
+			}	
+		},
+		update: function(e) {
+			this.setState({txt: e.target.value});
+		},
+		render: function() {
+			return(
+				<div>
+					<input type="text" onChange={this.update} />
+					<h2>{this.props.statex}</h2>
+					<h3>{this.state.txt}</h3>
+				</div>	
+			)
+		}
+	});
+
+	React.render(<Statex statex="State Basic for Update & Maintain Component"/>, document.getElementById('content'));
+</script>

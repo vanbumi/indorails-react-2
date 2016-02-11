@@ -1,0 +1,30 @@
+<div class="row">
+	<span class="pull-right"><a href="/lesson/index"><i class="glyphicon glyphicon-hand-left"></i>&nbsp;Go back</a></span>	
+	<h1>Chapter One</h1>
+</div>
+
+<pre>
+&lt;div id="content"&gt;&lt;/div&gt;
+
+&lt;script type="text/jsx"&gt;
+
+	var App = React.createClass({
+		render: function() {
+			return &lt;h3&gt;Hello Dyo and Hello World!&lt;/h3&gt;
+		}
+	});
+	React.render(&lt;App /&gt;, document.getElementById('content'));
+&lt;/script&gt;
+</pre>
+
+<div id="content"></div>
+
+<script type="text/jsx">
+
+	var App = React.createClass({
+		render: function() {
+			return <h3>Hello Dyo and Hello World!</h3>
+		}
+	});
+	React.render(<App />, document.getElementById('content'));
+</script>
